@@ -1,0 +1,160 @@
+nav {
+    background-color: navy;
+    height: 90px;
+    width: 100%;
+    /*top: 0px;*/
+    position: sticky;
+
+}
+#footer {
+    background-color: navy;
+    height: 90px;
+    width: 100%;
+    top: 0px;
+    border-radius: 5px;
+    color: white;
+
+}
+.bhagi{
+    margin-left: 170px;
+}
+footer.li{
+    color: whitesmoke;
+    font-family: fantasy 18px;
+}
+li {
+
+    display: inline-block;
+    margin: 17px;
+    margin-left: 30px;
+    margin-top: 20px;
+
+    
+}
+
+a,.foot1 { color:white;
+    font-size: 21px;
+    margin-left: 50px;
+    margin-top:50px;
+    text-decoration: none;
+    padding-top: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*a:hover{
+    background-color: yellowgreen;
+}*/
+.img1{
+    background-image:url("https://wallpapercave.com/wp/wp4434556.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.heading{
+    color:white;
+    font-size: 90px;
+    font-family: monospace;
+    text-shadow:  10px 22px 10px black;
+}
+.welcome {
+    margin-left: 130px;
+    padding: 50px;
+}
+.para1{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    color:maroon;
+
+
+}
+.care{
+    font-size: 39px;
+    color:violet ;
+    font-weight: bold;
+    text-shadow:  10px 22px 10px black;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+ 
+  .imagec {
+    border:burlywood 10px ;
+    box-shadow:10px 10px 20px black;
+    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    
+
+  }
+  .text {
+    color:black;
+    font-family: cursive;
+    padding-left: 20px;
+    font-size:16px ;
+    
+  }
+  /*.paraimg{
+      border:burlywood 10px ;
+      box-shadow:10px 10px 20px black;
+      border-radius: 15px;
+  }*/
+  div.flexcont{
+      display: flex;
+      flex-direction: row;
+      border:burlywood 10px ;
+      box-shadow:10px 10px 20px black;
+      border-radius: 15px;
+      margin-bottom: 15px;
+  }
+  .head2{
+      color:brown 20px;
+      text-shadow:10px 10px 15px black;
+  }
+  .subhead2{
+      color: rgb(9, 63, 85);
+      font-size: 27px;
+  }
+ 
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3px 3px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+   .anchor{
+       color: black;
+       margin: 2px;
+       font-weight: bold;
+   }
+  

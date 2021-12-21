@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Form</title>
+    <meta charset= "UTF-8">
+    <meta name = "keyword" content = "Dentist">
+    <meta name = "author" content = "Bhagyasree.M">
+    <meta name = "viewport" content = "width=device-width,initial-scale-1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <style>
+        
+        .head{
+            color: firebrick;
+            font-size: large;
+            font-style: italic;  
+            margin-left: 40px;
+            font-weight: bold;          
+        }
+        #firstname,#carrr{
+            border:orchid 2px solid ;
+            border-radius: 20px;
+            height:30px;
+            width:220px ;
+            margin-left: 34px;
+            
+        }
+        #hosp1{
+            width:530px ;
+            margin-left: 100px;
+
+        }
+        #hosp3{
+            margin-left: 370px;
+        }
+        .mail,#email,#mobile{
+            margin-left: 113px;
+            border:orchid 2px solid ;
+            border-radius: 20px;
+            height:30px;
+            width:220px ;
+            
+        }
+        #date{
+            margin-left:50px ;
+            margin-right: 10px;
+
+        }
+        #mobile{
+            margin-left: 105px;
+        }
+     /*   #lastname,#cpswrd,#exp,#year{
+            margin-right: 80px;
+        }*/
+        form{
+            border: black 2px solid;
+            padding-left:10px ;
+            width: 500px;
+            height: 600px;
+            border-radius: 13px;
+            background: linear-gradient(rgb(123, 218, 235),rgb(236, 192, 233));
+           background-color: transparent;
+            box-shadow: -20px 40px 60px blueviolet;
+        }
+        h1{
+            color:black;
+           padding-left: 30px; 
+           text-decoration: underline;
+    
+        }
+        #sub,#res{
+            background-color: blue;
+            color: white;
+            height: 30px;
+            width: 100px;
+            margin-top: 30px;
+            
+        }
+        #sub{
+            margin-left: 110px;
+        }
+        #res{
+            
+        
+            margin-bottom:50px ;
+            
+        }
+        #carr {
+            font-weight: 700;
+        }
+        .appbg{
+           /* background-image: url("http://www.drbhutanidentalclinic.com/blog/wp-content/uploads/2018/04/Cosmetic-Dentist-Now-Offers-Stunning-Smile-Makeover-in-Delhi.jpg");*/
+            background-repeat: none;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+           /* background-image: url("https://www.dratuljajoo.com/wp-content/uploads/2018/09/Smile-makeover.jpg");
+            order: 2;*/
+        }
+        .smile{
+            height: 600px;
+            width: 870px;
+        }
+        .bookhead{
+            color: purple;
+            font-size: 24px;
+        }
+        #button{
+            background-color: navy;
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-bottom:1px ;
+            padding: 10px;
+            height: 30px;
+            width: 150px;
+            border-radius: 13px;
+            
+        }
+        a{
+            color: white;
+            
+        }
+        .error{
+                color: red;
+        }
+        .border1{
+            border: mediumspringgreen;
+        }
+        #message{
+            width: 300px;
+            margin-left: 40px;
+            border:orchid 2px solid ;
+            border-radius: 20px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <div class="appbg">
+    
+    <form action= "success.html"> <!--novalidate: to stop browser's implicit validation-->
+        <table>
+            <tr><h1 class="bookhead"><i>Book your Appointment </i></h1></tr>
+            
+            <tr> 
+               
+                <td>
+                    <label for = "firstname"> <b class="head">Enter your name*</b></label>
+                    <input type = "text" placeholder="Enter your first name" name="firstname" id="firstname" pattern="[A-Za-z]{3,8}" required>
+                     </td>
+                <td>
+            </tr>
+            <tr>
+                <td><label for="email"><b class="head">Email*</b></label>
+                    <input type = "text" placeholder="Enter your email" class="mail" name="email" id="email"  required pattern="[A-Za-z@.]*">
+                </td>
+               
+
+            </tr>     
+                <tr>
+                    <td><label for="mobile"><b class="head">Mobile*</b></label> 
+                        <input type = "text" placeholder="Enter your mobile number" name="mobile" id="mobile"  required >
+                </td>
+                <tr><td></td><td id="error1" class="error"></td></tr>
+            </tr>
+            <tr>      <td>
+                    <label for="treat" class="head">Select treatment:</label>
+                    <select name="treat" id="carrr"  id="hosp1">
+                        <option value="Pediatic dentistry">Pediatic dentistry</option>
+                        <option value="Gum care">Gum care</option>
+                        <option value="Laser Dentistry">Laser Dentistry</option>
+                        <option value="Crowns and bridges">Crowns and bridges</option>
+                        <option value="Implants">Implants</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                <label for="area"  class="head">**Select  Area**:</label>
+                <select name="area" id="carrr"  id="hosp3">
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="vijayawada">Vijayawada</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="banglore">Banglore</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date"><b class="head">Book your date*</b></label>
+                    <input type = "date"  class="date" name="date" id="date" required>
+                </td>
+                <br>
+                <tr>
+                    <td><label for="message"><b class="head" id="msg">Any message to dentist:</b></label> <br>
+                        <textarea id="message" name="message" rows="5" cols="3">
+                            </textarea>
+                    </td>
+            </tr>
+        
+                <br>
+                <tr>
+                    
+                    <td><input type="submit" id="sub"/><input type="reset" id="res" /></td>
+                    </tr>
+
+        </table>
+
+       
+    </form>
+    <div>
+        <img class="smile" src="http://www.drbhutanidentalclinic.com/blog/wp-content/uploads/2018/04/Cosmetic-Dentist-Now-Offers-Stunning-Smile-Makeover-in-Delhi.jpg">
+        
+    </div>
+    </div><center>
+    <button id="button">
+        <a href="index.html" >Home</a></center>
+    </button>
+    <script>
+        $(document).ready(function(){
+          $("#res").mousedown(function(){
+            alert("Want to reset?Click OK then");
+          });
+        });
+        </script>
+</body>
+</html>
